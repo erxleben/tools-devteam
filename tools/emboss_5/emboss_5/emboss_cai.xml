@@ -172,9 +172,6 @@
     </test>
   </tests>
   <help>
-.. class:: warningmark
-
-The input dataset needs to be sequences.
 
 -----
 
@@ -183,11 +180,23 @@ The input dataset needs to be sequences.
     .. _here: http://emboss.sourceforge.net/apps/release/5.0/emboss/apps/cai.html
 
 ------
+**What it does**
 
-**Citation**
+This tool calculates the Codon Adaptation Index for a given nucleotide sequence, given a reference codon usage table. The CAI index is a simple, effective measure of synonymous codon usage bias. It index assesses the extent to which selection has been effective in moulding the pattern of codon usage. In that respect it is useful for predicting the level of expression of a gene, for assessing the adaptation of viral genes to their hosts, and for making comparisons of codon usage in different organisms. The index may also give an approximate indication of the likely success of heterologous gene expression. 
 
-For the underlying tool, please cite `Rice P, Longden I, Bleasby A. EMBOSS: the European Molecular Biology Open Software Suite. Trends Genet. 2000 Jun;16(6):276-7. &lt;http://www.ncbi.nlm.nih.gov/pubmed/10827456&gt;`_
+**Input**
 
-If you use this tool in Galaxy, please cite `Blankenberg D, Taylor J, Schenck I, He J, Zhang Y, Ghent M, Veeraraghavan N, Albert I, Miller W, Makova KD, Hardison RC, Nekrutenko A. A framework for collaborative analysis of ENCODE data: making large-scale analyses biologist-friendly. Genome Res. 2007 Jun;17(6):960-4. &lt;http://www.ncbi.nlm.nih.gov/pubmed/17568012&gt;`_
+cai reads a nucleic acid sequence of a gene. 
+
+**Output**
+
+cai writes the Codon Adaptation Index to the output file.
+
   </help>
+
+  <citations>
+    <citation type="doi">10.1016/S0168-9525(00)02024-2</citation>
+    <citation type="doi">10.1101/gr.5578007</citation>
+  </citations>
+
 </tool>
