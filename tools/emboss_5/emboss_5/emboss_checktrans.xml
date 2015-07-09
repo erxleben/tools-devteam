@@ -74,10 +74,6 @@
   <code file="emboss_format_corrector.py" />
   <help>
 
-.. class:: warningmark 
-
-The input dataset needs to be sequences. 
-
 ----- 
 
     You can view the original documentation here_.
@@ -85,11 +81,25 @@ The input dataset needs to be sequences.
     .. _here: http://emboss.sourceforge.net/apps/release/5.0/emboss/apps/checktrans.html
 
 ------
+**What it does**
 
-**Citation**
+This tools reports STOP codons and ORF statistics of a protein. checktrans reads a protein sequence containing stop characters and writes a statistical report of any open reading frames (ORFs) that are greater than a minimum size. An open reading frame is defined as a continuous region of protein sequence with no stop characters. The default minimum ORF size is 100 residues. In addition to the report output, any ORF sequences are written to file and features of those sequences written to a separate file.
 
-For the underlying tool, please cite `Rice P, Longden I, Bleasby A. EMBOSS: the European Molecular Biology Open Software Suite. Trends Genet. 2000 Jun;16(6):276-7. &lt;http://www.ncbi.nlm.nih.gov/pubmed/10827456&gt;`_
+**Input**
 
-If you use this tool in Galaxy, please cite `Blankenberg D, Taylor J, Schenck I, He J, Zhang Y, Ghent M, Veeraraghavan N, Albert I, Miller W, Makova KD, Hardison RC, Nekrutenko A. A framework for collaborative analysis of ENCODE data: making large-scale analyses biologist-friendly. Genome Res. 2007 Jun;17(6):960-4. &lt;http://www.ncbi.nlm.nih.gov/pubmed/17568012&gt;`_
+This program reads the USA (Uniform Sequence Address) of a protein sequence with STOP codons in it.
+
+**Output**
+
+This program writes three files: the ORF report file (x13776_1.checktrans), the output sequence file (x13776_1.fasta) and the feature file (x13776_1.out3) which is in GFF format by default.
+
+The ORF report file gives the numeric count of the ORF, the position of the terminating STOP codon, the length of the ORF, its start and end positions and the name of the sequence it has been written out as. 
+
   </help>
+
+  <citations>
+    <citation type="doi">10.1016/S0168-9525(00)02024-2</citation>
+    <citation type="doi">10.1101/gr.5578007</citation>
+  </citations>
+
 </tool>
