@@ -207,9 +207,6 @@
   <code file="emboss_format_corrector.py" />
   <help>
 
-.. class:: warningmark 
-
-The input dataset needs to be sequences. 
 
 ----- 
 
@@ -218,11 +215,24 @@ The input dataset needs to be sequences.
     .. _here: http://emboss.sourceforge.net/apps/release/5.0/emboss/apps/backtranseq.html
 
 ------
+**What it does**
 
-**Citation**
+This tool back-translates a protein sequence to a nucleotide sequence. backtranseq reads a protein sequence and writes the nucleic acid sequence it is most likely to have come from.
 
-For the underlying tool, please cite `Rice P, Longden I, Bleasby A. EMBOSS: the European Molecular Biology Open Software Suite. Trends Genet. 2000 Jun;16(6):276-7. &lt;http://www.ncbi.nlm.nih.gov/pubmed/10827456&gt;`_
+**Input**
 
-If you use this tool in Galaxy, please cite `Blankenberg D, Taylor J, Schenck I, He J, Zhang Y, Ghent M, Veeraraghavan N, Albert I, Miller W, Makova KD, Hardison RC, Nekrutenko A. A framework for collaborative analysis of ENCODE data: making large-scale analyses biologist-friendly. Genome Res. 2007 Jun;17(6):960-4. &lt;http://www.ncbi.nlm.nih.gov/pubmed/17568012&gt;`_
+One or more protein sequences. 
+
+**Output**
+
+The output is a nucleotide sequence containing the most favoured back translation of the specified protein, and using the specified translation table (which defaults to human). 
+
   </help>
+
+  <citations>
+    <citation type="doi">10.1016/S0168-9525(00)02024-2</citation>
+    <citation type="doi">10.1101/gr.5578007</citation>
+  </citations>
+  
+  
 </tool>
