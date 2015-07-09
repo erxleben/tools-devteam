@@ -38,8 +38,25 @@
     </tests>
 
     <help>
-Annotates a tabular dataset with information from the `Drug-Gene Interations database`__
+
+
+**What it does**
+
+This tool annotates a tabular dataset with genes of interest with respect to known drug-gene interactions and potential druggability.with information from the `Drug-Gene Interations database`__
 
 .. __: http://dgidb.genome.wustl.edu/
+
+
+**Input**
+
+Use official HUGO gene symbols as reported by Entrez Gene. You should get reasonable results with known synonyms, Ensembl Ids, Uniprot Ids, etc. If you enter a gene name that is ambiguous or unmatched this will be noted in the results. You should attempt to find a more official name for such genes and update your gene list.
+
+
     </help>
+    
+    <citations>
+        <citation type="doi">10.1038/nmeth.2689</citation>
+    </citations>    
+    
+    
 </tool>
