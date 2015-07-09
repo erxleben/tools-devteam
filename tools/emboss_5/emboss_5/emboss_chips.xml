@@ -27,12 +27,25 @@
     
     .. _here: http://emboss.sourceforge.net/apps/release/5.0/emboss/apps/chips.html
 
-------
+**What it does**
 
-**Citation**
+This tool calculates Nc codon usage statistic. It calculates Frank Wright's Nc statistic for a nucleotide sequence. This is the "effective number of codons used in a gene sequence", and is a simple measure of synonymous codon usage bias. Nc quantifies how far the codon usage of a gene departs from equal usage of synonymous codons.
 
-For the underlying tool, please cite `Rice P, Longden I, Bleasby A. EMBOSS: the European Molecular Biology Open Software Suite. Trends Genet. 2000 Jun;16(6):276-7. &lt;http://www.ncbi.nlm.nih.gov/pubmed/10827456&gt;`_
+Nc is easily calculated from codon usage data alone and is independent of gene length and amino acid composition. Nc can take values from 20, in the case of extreme bias where one codon is exclusively used for each amino acid, to 61 when the use of alternative synonymous codons is equally likely. Nc thus provides an intuitively meaningful measure of the extent of codon preference in a gene. Low values therefore indicate a strong codon bias, and high values indicate a low bias (and possibly a non-coding region). 
 
-If you use this tool in Galaxy, please cite `Blankenberg D, Taylor J, Schenck I, He J, Zhang Y, Ghent M, Veeraraghavan N, Albert I, Miller W, Makova KD, Hardison RC, Nekrutenko A. A framework for collaborative analysis of ENCODE data: making large-scale analyses biologist-friendly. Genome Res. 2007 Jun;17(6):960-4. &lt;http://www.ncbi.nlm.nih.gov/pubmed/17568012&gt;`_
+**Input**
+
+chips reads one or more nucleotide sequences. 
+
+**Output**
+
+If all codons are used, the Nc value will be 61. If only one codon is used for each amino acid the Nc value will be 20. Low values therefore indicate a strong codon bias, and high values indicate a low bias (and possibly a non-coding region). 
+
   </help>
+
+  <citations>
+    <citation type="doi">10.1016/S0168-9525(00)02024-2</citation>
+    <citation type="doi">10.1101/gr.5578007</citation>
+  </citations>
+
 </tool>
