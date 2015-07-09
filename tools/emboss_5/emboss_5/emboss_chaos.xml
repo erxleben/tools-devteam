@@ -20,12 +20,20 @@
     
     .. _here: http://emboss.sourceforge.net/apps/release/5.0/emboss/apps/chaos.html
 
-------
+**What is does**
 
-**Citation**
+This tool draws a chaos game representation (CGR) plot for a nucleotide sequence. A CGR plot represents a nucleotide sequence as a square box with an A, G, C, or T nucleotide at each corner. The box contains dots, each one representing a dinucleotide. All overlapping dinucleotides from the start to the end of the sequence are plotted. Regions which are devoid of dots (or heavily covered with dots) indicate short sequence motifs that are unusually infrequent (or frequent). CGR plots depict base composition and sequentiality and is a unique visual representation of a sequence that complements more traditional linear representations. 
 
-For the underlying tool, please cite `Rice P, Longden I, Bleasby A. EMBOSS: the European Molecular Biology Open Software Suite. Trends Genet. 2000 Jun;16(6):276-7. &lt;http://www.ncbi.nlm.nih.gov/pubmed/10827456&gt;`_
+**Input**
 
-If you use this tool in Galaxy, please cite `Blankenberg D, Taylor J, Schenck I, He J, Zhang Y, Ghent M, Veeraraghavan N, Albert I, Miller W, Makova KD, Hardison RC, Nekrutenko A. A framework for collaborative analysis of ENCODE data: making large-scale analyses biologist-friendly. Genome Res. 2007 Jun;17(6):960-4. &lt;http://www.ncbi.nlm.nih.gov/pubmed/17568012&gt;`_
+chaos reads a single nucleotide sequence. 
+
+
   </help>
+
+  <citations>
+    <citation type="doi">10.1016/S0168-9525(00)02024-2</citation>
+    <citation type="doi">10.1101/gr.5578007</citation>
+  </citations>
+
 </tool>
