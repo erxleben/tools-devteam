@@ -21,12 +21,20 @@
     
     .. _here: http://emboss.sourceforge.net/apps/release/5.0/emboss/apps/banana.html
 
-------
+**What it does**
 
-**Citation**
+This tools plots bending and curvature data for B-DNA. banana predicts bending of a normal (B) DNA double helix, using the method of Goodsell & Dickerson, NAR 1994 11;22(24):5497-5503. The program calculates the magnitude of local bending and macroscopic curvature at each point along an arbitrary B-DNA sequence, using any desired bending model that specifies values of twist, roll and tilt as a function of sequence.
 
-For the underlying tool, please cite `Rice P, Longden I, Bleasby A. EMBOSS: the European Molecular Biology Open Software Suite. Trends Genet. 2000 Jun;16(6):276-7. &lt;http://www.ncbi.nlm.nih.gov/pubmed/10827456&gt;`_
+**Input**
 
-If you use this tool in Galaxy, please cite `Blankenberg D, Taylor J, Schenck I, He J, Zhang Y, Ghent M, Veeraraghavan N, Albert I, Miller W, Makova KD, Hardison RC, Nekrutenko A. A framework for collaborative analysis of ENCODE data: making large-scale analyses biologist-friendly. Genome Res. 2007 Jun;17(6):960-4. &lt;http://www.ncbi.nlm.nih.gov/pubmed/17568012&gt;`_
+Banana reads a single nucleotide sequence.
+
   </help>
+  
+  <citations>
+    <citation type="doi">10.1016/S0168-9525(00)02024-2</citation>
+    <citation type="doi">10.1101/gr.5578007</citation>
+  </citations>
+
+
 </tool>
