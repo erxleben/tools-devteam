@@ -71,11 +71,26 @@
     .. _here: http://emboss.sourceforge.net/apps/release/5.0/emboss/apps/coderet.html
 
 ------
+**What it does**
 
-**Citation**
+coderet extracts the coding nucleotide sequence (CDS), messenger RNA nucleotide sequence (mRNA) and translations specified by the feature tables of the input sequence(s). If the sequences to be extracted are in other entries of that database, they are automatically fetched and incorporated correctly into the output.
 
-For the underlying tool, please cite `Rice P, Longden I, Bleasby A. EMBOSS: the European Molecular Biology Open Software Suite. Trends Genet. 2000 Jun;16(6):276-7. &lt;http://www.ncbi.nlm.nih.gov/pubmed/10827456&gt;`_
+For each input sequence, an output sequence file is written containing any CDS, mRNA and protein translation sequences from the input feature table. Optionally, the CDS, mRNA, translated protein sequence and non-coding nucleotide sequence regions may be written to separate files.
 
-If you use this tool in Galaxy, please cite `Blankenberg D, Taylor J, Schenck I, He J, Zhang Y, Ghent M, Veeraraghavan N, Albert I, Miller W, Makova KD, Hardison RC, Nekrutenko A. A framework for collaborative analysis of ENCODE data: making large-scale analyses biologist-friendly. Genome Res. 2007 Jun;17(6):960-4. &lt;http://www.ncbi.nlm.nih.gov/pubmed/17568012&gt;`_
+**Input**
+
+coderet reads one or more nucleic sequences having CDS, mRNA or translation headings in their feature tables. 
+
+**Output**
+
+The output is a sequence file containing any CDS, mRNA and protein translation sequences as specified by the feature table of the sequence(s).
+
   </help>
+
+  <citations>
+    <citation type="doi">10.1016/S0168-9525(00)02024-2</citation>
+    <citation type="doi">10.1101/gr.5578007</citation>
+  </citations>
+
+
 </tool>
