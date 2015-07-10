@@ -35,6 +35,14 @@
 
 cpgplot identifies CpG islands in one or more nucleotide sequences. The ratio of observered to expected number of GC dinucleotides patterns is calculated over a window (sequence region) which is moved along the sequence. The calculated ratios are plotted graphically, together with the regions which match this program's definition of a "CpG island" (a CG dinucleotide rich area). A report file is written giving the input sequence name, CpG island parameters and data on any CpG islands that are found.
 
+The ratio of observered to expected number of GC dinucleotides patterns is calculated over a window of user-specified size. The window is slid along the sequence and the ratio recalculated until the end of the sequence is reached.
+
+By default, cpgplot defines a CpG island as a region where, over an average of 10 windows and not less than 200 bases, the calculated (%G + %C) content is over 50% and the calculated Observed/Expected ratio is over 0.6. These conditions can be modified by setting the values of the appropriate parameters.
+
+The Observed number of CpG patterns in a window is simply the number of times a 'C' is found followed immediately by a 'G'.
+
+The Expected number of CpG patterns is calculated for each window as the number of CpG dinucleotides you would expect to see in that window based on the frequency of C's and G's in that window. Thus, the Expected frequency of CpG's in a window is calculated as the number of 'C's in the window multiplied by the number of 'G's in the window, divided by the window length.
+
 **Input**
 
 cpgplot reads one or more nucleotide sequences. 
