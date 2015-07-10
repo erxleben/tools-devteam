@@ -31,11 +31,23 @@
     .. _here: http://emboss.sourceforge.net/apps/release/5.0/emboss/apps/cpgplot.html
 
 ------
+**What it does**
 
-**Citation**
+cpgplot identifies CpG islands in one or more nucleotide sequences. The ratio of observered to expected number of GC dinucleotides patterns is calculated over a window (sequence region) which is moved along the sequence. The calculated ratios are plotted graphically, together with the regions which match this program's definition of a "CpG island" (a CG dinucleotide rich area). A report file is written giving the input sequence name, CpG island parameters and data on any CpG islands that are found.
 
-For the underlying tool, please cite `Rice P, Longden I, Bleasby A. EMBOSS: the European Molecular Biology Open Software Suite. Trends Genet. 2000 Jun;16(6):276-7. &lt;http://www.ncbi.nlm.nih.gov/pubmed/10827456&gt;`_
+**Input**
 
-If you use this tool in Galaxy, please cite `Blankenberg D, Taylor J, Schenck I, He J, Zhang Y, Ghent M, Veeraraghavan N, Albert I, Miller W, Makova KD, Hardison RC, Nekrutenko A. A framework for collaborative analysis of ENCODE data: making large-scale analyses biologist-friendly. Genome Res. 2007 Jun;17(6):960-4. &lt;http://www.ncbi.nlm.nih.gov/pubmed/17568012&gt;`_
+cpgplot reads one or more nucleotide sequences. 
+
+**Output**
+
+ The three output files are a text file, a gff file and a graphical output.. 
+
   </help>
+
+  <citations>
+    <citation type="doi">10.1016/S0168-9525(00)02024-2</citation>
+    <citation type="doi">10.1101/gr.5578007</citation>
+  </citations>
+
 </tool>
