@@ -29,9 +29,6 @@
     </test>
   </tests>
   <help>
-.. class:: warningmark
-
-The input dataset needs to be sequences.
 
 -----
 
@@ -41,10 +38,34 @@ The input dataset needs to be sequences.
 
 ------
 
-**Citation**
+**What it does**
 
-For the underlying tool, please cite `Rice P, Longden I, Bleasby A. EMBOSS: the European Molecular Biology Open Software Suite. Trends Genet. 2000 Jun;16(6):276-7. &lt;http://www.ncbi.nlm.nih.gov/pubmed/10827456&gt;`_
+compseq calculates the composition of words of a specified length (dimer, trimer etc) in the input sequence(s). The word length is user-specified. The unique sequences (words), their observed count, observed frequency, expected frequency and (observed / expected) frequency are written to the output file. The (observed / expected) frequency highlights any words with unusually high (or low) occurence in the input sequences.
 
-If you use this tool in Galaxy, please cite `Blankenberg D, Taylor J, Schenck I, He J, Zhang Y, Ghent M, Veeraraghavan N, Albert I, Miller W, Makova KD, Hardison RC, Nekrutenko A. A framework for collaborative analysis of ENCODE data: making large-scale analyses biologist-friendly. Genome Res. 2007 Jun;17(6):960-4. &lt;http://www.ncbi.nlm.nih.gov/pubmed/17568012&gt;`_
+**Input**
+
+compseq reads a normal sequence(s). 
+
+**Output**
+
+The output format consists of:
+
+Header information and comments are preceeded by a '#' character at the start of the line.
+
+The Word size and the Total count are then given on separate lines,
+
+The headers of the columns of results are preceeded by a '#'
+
+The results columns are: the sub-sequence word, the observed frequency, the expected frequency (which will be read from the input file if one is given, else it is a simple inverse of the number of words of the size specified that can be constructed), the ratio of the observed to expected frequency.
+
+After a blank line at the end, the results of 'Other' words is given - this is the number of words with a sequence which has IUPAC ambiguity codes or other unusual characters in. 
+
   </help>
+
+  <citations>
+    <citation type="doi">10.1016/S0168-9525(00)02024-2</citation>
+    <citation type="doi">10.1101/gr.5578007</citation>
+  </citations>
+
+
 </tool>
