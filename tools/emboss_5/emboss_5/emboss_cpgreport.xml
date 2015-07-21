@@ -36,22 +36,31 @@
   </tests>
   <code file="emboss_format_corrector.py" />
   <help>
-.. class:: warningmark
 
-The input dataset needs to be sequences.
+**What it does**
 
------
+This tool identifies and reports CpG-rich regions in nucleotide sequence(s). Cpgreport identifies in a nucleotide sequence regions with higher than expected frequency of the dinucleotide CG.
+Each position in the sequence is scored using a running sum calculated from all positions in the sequence. This is a different method to that typically used for identifying CpG islands, for example by newcpgreport and cpgplot. This method overpredicts islands but finds the smaller ones around primary exons. 
+
+**Input**
+
+Cpgreport reads one or more nucleotide sequences.
+
+
+**Output**
+
+An output file is written with information on the CpG-rich regions that are found. A feature table of sequence features in these regions is also written.
+
 
     You can view the original documentation here_.
     
     .. _here: http://emboss.sourceforge.net/apps/release/5.0/emboss/apps/cpgreport.html
 
-------
-
-**Citation**
-
-For the underlying tool, please cite `Rice P, Longden I, Bleasby A. EMBOSS: the European Molecular Biology Open Software Suite. Trends Genet. 2000 Jun;16(6):276-7. &lt;http://www.ncbi.nlm.nih.gov/pubmed/10827456&gt;`_
-
-If you use this tool in Galaxy, please cite `Blankenberg D, Taylor J, Schenck I, He J, Zhang Y, Ghent M, Veeraraghavan N, Albert I, Miller W, Makova KD, Hardison RC, Nekrutenko A. A framework for collaborative analysis of ENCODE data: making large-scale analyses biologist-friendly. Genome Res. 2007 Jun;17(6):960-4. &lt;http://www.ncbi.nlm.nih.gov/pubmed/17568012&gt;`_
   </help>
+  
+  <citations>
+    <citation type="doi">10.1016/S0168-9525(00)02024-2</citation>
+    <citation type="doi">10.1101/gr.5578007</citation>
+  </citations>
+
 </tool>
