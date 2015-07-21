@@ -88,13 +88,17 @@
   </tests>
   <help>
 
-**Note**
+**What it does**
 
 This tool allows you to run a multiple sequence alignment with ClustalW2 (see Clustsrc_) using the default options.
  
 For a tutorial introduction, see ClustalW2_
 
-You can align DNA or protein sequences in the input file which should be multiple sequences to be aligned in a fasta file
+**Input**
+
+You can align DNA or protein sequences in the input file which should be multiple sequences to be aligned in a fasta file.
+
+**Output**
 
 A log will be output to your history showing the output Clustal would normally write to standard output.
 
@@ -105,7 +109,6 @@ If Clustal format is chosen, you have the option of adding basepair counts to th
 
 A subsequence of the alignment can be output by setting the Output complete parameter to "Partial" and defining the offset and end of the subsequence to be output 
 
-----
 
 **Attribution**
 
