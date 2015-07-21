@@ -207,14 +207,6 @@
   <code file="emboss_format_corrector.py" />
   <help>
 
-
------ 
-
-    You can view the original documentation here_.
-    
-    .. _here: http://emboss.sourceforge.net/apps/release/5.0/emboss/apps/backtranseq.html
-
-------
 **What it does**
 
 This tool back-translates a protein sequence to a nucleotide sequence. backtranseq reads a protein sequence and writes the nucleic acid sequence it is most likely to have come from.
@@ -226,6 +218,13 @@ One or more protein sequences.
 **Output**
 
 The output is a nucleotide sequence containing the most favoured back translation of the specified protein, and using the specified translation table (which defaults to human). 
+
+
+    You can view the original documentation here_.
+    
+    .. _here: http://emboss.sourceforge.net/apps/release/5.0/emboss/apps/backtranseq.html
+
+
 
   </help>
 
